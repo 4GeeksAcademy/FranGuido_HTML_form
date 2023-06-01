@@ -1,0 +1,15 @@
+*{
+   border-color: blueviolet; 
+   border-style: ridge;
+}
+
+/*container style*/
+.container{
+    background-color: lightgray;
+}
+
+/*header style*/
+
+.form-header{
+    height: 20px;
+}
