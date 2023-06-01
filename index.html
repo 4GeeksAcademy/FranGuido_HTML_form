@@ -20,7 +20,7 @@
 
     <!-- top spacing-->
     <div class="container">
-        <div class="row justify-content-center"">
+        <div class="form-group row justify-content-center"">
             <div class="col form-header"></div>
         </div>
     </div>
@@ -36,63 +36,131 @@
         </div>
 
         <!--card info-->
-        <div class="row justify-content-center">
+        <div class="form-group row justify-content-center">
 
             <!--card number-->
             <div class="col-5">
                 <label for="cardNumber" class="form-label">Card #</label>
-                <input class="form-control" type="text" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" aria-label="form-control">
+                <input class="form-control" type="text" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" aria-label="form example">
             </div>
 
             <!--card cvc-->
             <div class="col-3">
                 <label for="cardSecurity" class="form-label">Card #</label>
-                <input class="form-control" type="text" id="cardSecurity" placeholder="0000" aria-label="form-control">
+                <input class="form-control" type="text" id="cardSecurity" placeholder="0000" aria-label="form example">
             </div>
 
             <!--money amount-->
             <div class="col-4">
                 <label for="cardAmount" class="form-label">Amount ($)</label>
-                <input class="form-control" type="text" id="cardAmount" placeholder="Amount" aria-label="form-control">
+                <input class="form-control" type="text" id="cardAmount" placeholder="Amount" aria-label="form exmple">
             </div>
         </div>
 
         <!--user info-->
-        <div class="row justify-content-center">
+        <div class="form-group row justify-content-center">
             <!--user first name-->
             <div class="col-6">
                 <label for="userFisrtname" class="form-label">First name</label>
-                <input class="form-control" type="text" id="userFisrtname" aria-label="form-control">
+                <input class="form-control" type="text" id="userFisrtname" aria-label="firsst name">
             </div>
 
             <!--user last name-->
             <div class="col-6">
                 <label for="userLastname" class="form-label">Last name</label>
-                <input class="form-control" type="text" id="userLastname" aria-label="form-control">
+                <input class="form-control" type="text" id="userLastname" aria-label="last name">
             </div>
         </div>
 
         <!--address-->
-        <div class="row justify-content-center">
+        <div class="form-group row justify-content-center">
 
             <!--city-->
             <div class="col-6">
-                <label for="cardNumber" class="form-label">City</label>
-                <input class="form-control" type="text" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" aria-label="form-control">
+                <label for="cityInfo" class="form-label">City</label>
+                <input class="form-control" type="text" id="cityInfo" aria-label="city">
             </div>
 
             <!--state-->
             <div class="col-3">
                 <label for="cardSecurity" class="form-label">State</label>
-                <input class="form-control" type="text" id="cardSecurity" placeholder="0000" aria-label="form-control">
+                <select class="form-select" id="cardSecurity" aria-label="Default select example">
+                    <option value="1">Pick a state</option>
+                    <option value="1">State A</option>
+                    <option value="2">State B</option>
+                    <option value="3">State C</option>
+                  </select>
             </div>
 
             <!--postal code-->
             <div class="col-3">
-                <label for="cardAmount" class="form-label">Postal code</label>
-                <input class="form-control" type="text" id="cardAmount" placeholder="Amount" aria-label="form-control">
+                <label for="postalCode" class="form-label">Postal code</label>
+                <input class="form-control" type="text" id="postalCode"  aria-label="postal code">
+            </div>
+
+        </div>
+
+        <!--additional info-->
+
+        <!--header of additional info labels-->
+        <div class="form-group row justify-content-center">
+            <div class="col-6">
+                <label for="paymentForm" class="form-label">We accept:</label>
+            </div>
+            <div class="col-6">
+                <label for="message" class="textarea">Message</label>
             </div>
         </div>
+
+        <!--header of additional info inputs-->
+
+        <div class="form-group row justify-content-center">
+            <!--payment options-->
+
+            <div class="col-6">
+                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio4">4</label>
+                  </div>
+                  
+            </div>
+
+             <!--leave a message section-->
+             <div class="col-6">
+                    <textarea class="w-100" name="message" id="message" rows="3" columns="30"></textarea>
+                    <p>Add any notes here.</p>
+            </div>
+        </div>
+        
+        <!--Divider line-->
+        <div class="row justify-content-center">
+            <div class="col">
+                <hr class="hr w-100" />
+            </div>
+        </div>
+
+        <!--form buttons-->
+        <div class="form-group row justify-content-center">
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary">Cancel</button>
+                <button type="submit" class="btn btn-secondary">Send</button>
+                
+            </div>
+        </div>
+        
 
     </div>
 
