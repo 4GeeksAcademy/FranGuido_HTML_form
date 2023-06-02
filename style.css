@@ -1,13 +1,13 @@
 /*{
-   border-color: blueviolet; 
-   border-style: ridge;
+    border-color: blue;
+    border-style: dashed;
 }
 
 /*container style*/
 .container{
     background-color: whitesmoke;
+    padding-top: 1%;
 }
-
 
 
 /*header style*/
@@ -19,4 +19,12 @@
 /*form labels style*/
 label{
     font-weight: bold;
+}
+
+/*payment section style*/
+span{
+    padding-left: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
 }
