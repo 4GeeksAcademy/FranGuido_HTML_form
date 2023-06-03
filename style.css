@@ -28,3 +28,8 @@ span{
     padding-top: 1%;
 
 }
+
+.fa-cc-paypal, .fa-cc-visa, .fa-cc-discover, .fa-cc-amex{
+    color: white;
+
+}
